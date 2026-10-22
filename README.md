@@ -146,4 +146,4 @@ All three studies were re-run from a clean copy of this repository. Studies 01 a
 * Gao, L., Han, Y., Li, S. Z., & Zhou, G. (2018). Market intraday momentum. *Journal of Financial Economics*, 129(2), 394–414.
 
 ---
-*Author: Muhammad Talal Malik · Business Data Analytics, COMSATS University*
+*Author: Muhammad Talal Malik*
