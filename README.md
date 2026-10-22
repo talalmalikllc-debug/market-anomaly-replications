@@ -6,7 +6,7 @@
 |---|---|---|---|
 | 01 | Krohn, Mueller & Whelan (2024), *Journal of Finance* 79(6) | USD rises into the major FX fixes and falls after them | **Falsified.** Gross P&L is zero (−0.43 pips/day, t = −0.31) against the paper's ≈ +6 pips/day. Net of spread it is significantly negative. |
 | 02 | Della Corte, Kosowski, Liu & Wang (2022), *Overnight–Intraday Reversal Everywhere* | The overnight return negatively predicts the next intraday return | **Sign replicates, economics do not.** Correlation is −0.05 to −0.08 on all four indices, but it lives at a ~49% win rate, and the cross-sectional version fails for lack of dispersion. |
-| 03 | Gao, Han, Li & Zhou (2018), *Journal of Financial Economics* 129(2) | The first half-hour return predicts the last half-hour | **Does not replicate.** $\beta_1$ is negative on all 7 instruments (t from −2.50 to −0.31). Of 19 displacement specs significant in development, **0** survive the 2025–26 holdout. |
+| 03 | Gao, Han, Li & Zhou (2018), *Journal of Financial Economics* 129(2) | The first half-hour return predicts the last half-hour | **Does not replicate.** $`\beta_1`$ is negative on all 7 instruments (t from −2.50 to −0.31). Of 19 displacement specs significant in development, **0** survive the 2025–26 holdout. |
 
 The value of this repository is the **process**: decode the paper exactly, check that the data can support the test, cost each trade realistically, then try hard to break the result with placebos, holdouts and per-year splits.
 
@@ -16,9 +16,11 @@ The value of this repository is the **process**: decode the paper exactly, check
 
 ## 01 · FX fixing reversal (EURUSD, 1,170 days, 2021–2026)
 
-The paper's Section V legs, implemented in New York time: short EURUSD from 02:00 into the fix (ECB 08:15 or London 11:00), then long until 17:00. With mid prices $m_k$ at the three boundaries:
+The paper's Section V legs, implemented in New York time: short EURUSD from 02:00 into the fix (ECB 08:15 or London 11:00), then long until 17:00. With mid prices $`m_k`$ at the three boundaries:
 
-$$g_t = 10^{4}\left[(m_{0}-m_{1}) + (m_{2}-m_{1})\right] \ \text{pips}, \qquad t = \frac{\bar g}{s_g/\sqrt{n}}$$
+```math
+g_t = 10^{4}\left[(m_{0}-m_{1}) + (m_{2}-m_{1})\right] \ \text{pips}, \qquad t = \frac{\bar g}{s_g/\sqrt{n}}
+```
 
 | | Gross, pips/day | t | Net of per-event spread | t |
 |---|---:|---:|---:|---:|
@@ -39,9 +41,11 @@ $$g_t = 10^{4}\left[(m_{0}-m_{1}) + (m_{2}-m_{1})\right] \ \text{pips}, \qquad t
 
 ## 02 · Overnight–intraday reversal (US100, US500, US30, GER40)
 
-The reversal *sign* holds on every index: $\mathrm{corr}(r^{\text{overnight}}_t,\ r^{\text{intraday}}_t)$ ranges from −0.053 to −0.079. Turning it into a trade runs into a geometry trap. For a bracket with payoff ratio $\rho = \overline{\text{win}}/\overline{|\text{loss}|}$, the break-even win rate is
+The reversal *sign* holds on every index: $`\mathrm{corr}(r^{\text{overnight}}_t,\ r^{\text{intraday}}_t)`$ ranges from −0.053 to −0.079. Turning it into a trade runs into a geometry trap. For a bracket with payoff ratio $`\rho = \overline{\text{win}}/\overline{|\text{loss}|}`$, the break-even win rate is
 
-$$\text{WR}_0 = \frac{1}{1+\rho}, \qquad \text{edge} = \text{WR} - \text{WR}_0 \;\;\Longleftrightarrow\;\; \mathbb{E}[\text{P\&L}] > 0 \iff \text{edge} > 0$$
+```math
+\text{WR}_0 = \frac{1}{1+\rho}, \qquad \text{edge} = \text{WR} - \text{WR}_0 \;\;\Longleftrightarrow\;\; \mathbb{E}[\text{P\&L}] > 0 \iff \text{edge} > 0
+```
 
 so a high win rate can be bought with a near target and a far stop, without any information. Every bracket that lifts the gap-fade to a 60% win rate has *negative* edge:
 
@@ -56,13 +60,17 @@ The only live lead points the *other* way: continuation after large down-gaps, +
 
 **Gao et al. regression,** estimated per instrument:
 
-$$r_{n,t} = \alpha + \beta_1\, r_{1,t} + \beta_2\, r_{n-1,t} + \varepsilon_t$$
+```math
+r_{n,t} = \alpha + \beta_1\, r_{1,t} + \beta_2\, r_{n-1,t} + \varepsilon_t
+```
 
 ![Gao replication](figures/03_gao_replication.png)
 
-**Displacement study.** Ten displacement variables × six horizons × six liquidity windows, each graded with Newey–West t-statistics (lag $L$ = holding horizon, to account for overlapping returns):
+**Displacement study.** Ten displacement variables × six horizons × six liquidity windows, each graded with Newey–West t-statistics (lag $`L`$ = holding horizon, to account for overlapping returns):
 
-$$t_{NW} = \frac{\bar x}{\sqrt{\hat\sigma^2_{NW}/n}}, \qquad \hat\sigma^2_{NW} = \hat\gamma_0 + 2\sum_{\ell=1}^{L}\left(1-\frac{\ell}{L+1}\right)\hat\gamma_\ell$$
+```math
+t_{NW} = \frac{\bar x}{\sqrt{\hat\sigma^2_{NW}/n}}, \qquad \hat\sigma^2_{NW} = \hat\gamma_0 + 2\sum_{\ell=1}^{L}\left(1-\frac{\ell}{L+1}\right)\hat\gamma_\ell
+```
 
 followed by a stratified placebo (displacement reshuffled within month × half-hour, so seasonality is preserved), a per-year sign check, a mirror control and a sealed **2025–26 holdout**.
 
