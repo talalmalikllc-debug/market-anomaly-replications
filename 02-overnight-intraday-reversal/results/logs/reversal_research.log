@@ -1,0 +1,48 @@
+US100.cash    1212 sessions  2021-09-14 -> 2026-07-28  median spread 80 pts = 0.0046% round trip
+US500.cash    1212 sessions  2021-09-14 -> 2026-07-28  median spread 38 pts = 0.0076% round trip
+US30.cash     1387 sessions  2021-01-04 -> 2026-07-28  median spread 150 pts = 0.0042% round trip
+GER40.cash    1167 sessions  2021-12-28 -> 2026-07-28  median spread 100 pts = 0.0056% round trip
+
+================ US100.cash ================
+  corr(overnight gap, following intraday return) = -0.0525   [negative = reversal]
+  TS-SIGN fade gap (gross)            n= 1211  WR= 49.0%  payoff=1.12  baselineWR= 47.2%  edge= +1.8pts  mean=+0.031%  t= 0.89  Sharpe= 0.40
+  TS-SIGN fade gap (net)              n= 1211  WR= 48.9%  payoff=1.11  baselineWR= 47.4%  edge= +1.5pts  mean=+0.026%  t= 0.76  Sharpe= 0.34
+  TS-THRESH gap top50% (net)          n=  606  WR= 49.5%  payoff=1.10  baselineWR= 47.6%  edge= +1.9pts  mean=+0.037%  t= 0.72  Sharpe= 0.46
+  TS-THRESH gap top25% (net)          n=  303  WR= 48.5%  payoff=1.33  baselineWR= 43.0%  edge= +5.5pts  mean=+0.124%  t= 1.46  Sharpe= 1.34
+  TS-THRESH gap top10% (net)          n=  122  WR= 45.1%  payoff=1.37  baselineWR= 42.1%  edge= +3.0pts  mean=+0.079%  t= 0.50  Sharpe= 0.72
+  IBS <0.2 long / >0.8 short (net)    n=  622  WR= 48.1%  payoff=1.04  baselineWR= 49.1%  edge= -1.0pts  mean=-0.019%  t=-0.36  Sharpe=-0.23
+
+================ US500.cash ================
+  corr(overnight gap, following intraday return) = -0.0739   [negative = reversal]
+  TS-SIGN fade gap (gross)            n= 1211  WR= 50.8%  payoff=1.11  baselineWR= 47.5%  edge= +3.3pts  mean=+0.042%  t= 1.61  Sharpe= 0.74
+  TS-SIGN fade gap (net)              n= 1211  WR= 50.4%  payoff=1.10  baselineWR= 47.7%  edge= +2.7pts  mean=+0.034%  t= 1.32  Sharpe= 0.60
+  TS-THRESH gap top50% (net)          n=  606  WR= 48.5%  payoff=1.24  baselineWR= 44.6%  edge= +3.9pts  mean=+0.058%  t= 1.36  Sharpe= 0.88
+  TS-THRESH gap top25% (net)          n=  303  WR= 49.8%  payoff=1.24  baselineWR= 44.6%  edge= +5.2pts  mean=+0.090%  t= 1.24  Sharpe= 1.13
+  TS-THRESH gap top10% (net)          n=  122  WR= 50.0%  payoff=1.27  baselineWR= 44.0%  edge= +6.0pts  mean=+0.120%  t= 0.99  Sharpe= 1.42
+  IBS <0.2 long / >0.8 short (net)    n=  607  WR= 48.9%  payoff=1.00  baselineWR= 49.9%  edge= -0.9pts  mean=-0.012%  t=-0.34  Sharpe=-0.22
+
+================ US30.cash ================
+  corr(overnight gap, following intraday return) = -0.0788   [negative = reversal]
+  TS-SIGN fade gap (gross)            n= 1386  WR= 51.5%  payoff=1.09  baselineWR= 47.8%  edge= +3.7pts  mean=+0.041%  t= 1.95  Sharpe= 0.83
+  TS-SIGN fade gap (net)              n= 1386  WR= 51.3%  payoff=1.08  baselineWR= 48.0%  edge= +3.3pts  mean=+0.037%  t= 1.75  Sharpe= 0.75
+  TS-THRESH gap top50% (net)          n=  693  WR= 48.9%  payoff=1.12  baselineWR= 47.2%  edge= +1.7pts  mean=+0.021%  t= 0.62  Sharpe= 0.38
+  TS-THRESH gap top25% (net)          n=  347  WR= 48.7%  payoff=1.36  baselineWR= 42.5%  edge= +6.2pts  mean=+0.091%  t= 1.61  Sharpe= 1.37
+  TS-THRESH gap top10% (net)          n=  139  WR= 47.5%  payoff=1.63  baselineWR= 38.0%  edge= +9.5pts  mean=+0.167%  t= 1.46  Sharpe= 1.97
+  IBS <0.2 long / >0.8 short (net)    n=  640  WR= 47.2%  payoff=1.17  baselineWR= 46.1%  edge= +1.1pts  mean=+0.012%  t= 0.41  Sharpe= 0.26
+
+================ GER40.cash ================
+  corr(overnight gap, following intraday return) = -0.0659   [negative = reversal]
+  TS-SIGN fade gap (gross)            n= 1166  WR= 47.4%  payoff=1.18  baselineWR= 45.9%  edge= +1.5pts  mean=+0.014%  t= 0.69  Sharpe= 0.32
+  TS-SIGN fade gap (net)              n= 1166  WR= 47.3%  payoff=1.15  baselineWR= 46.4%  edge= +0.9pts  mean=+0.008%  t= 0.42  Sharpe= 0.19
+  TS-THRESH gap top50% (net)          n=  583  WR= 45.8%  payoff=1.26  baselineWR= 44.2%  edge= +1.6pts  mean=+0.016%  t= 0.56  Sharpe= 0.37
+  TS-THRESH gap top25% (net)          n=  292  WR= 48.6%  payoff=1.47  baselineWR= 40.5%  edge= +8.1pts  mean=+0.092%  t= 2.00  Sharpe= 1.86
+  TS-THRESH gap top10% (net)          n=  117  WR= 49.6%  payoff=1.35  baselineWR= 42.6%  edge= +6.9pts  mean=+0.092%  t= 1.09  Sharpe= 1.61
+  IBS <0.2 long / >0.8 short (net)    n=  543  WR= 48.6%  payoff=0.98  baselineWR= 50.4%  edge= -1.8pts  mean=-0.016%  t=-0.58  Sharpe=-0.40
+
+============ CROSS-SECTIONAL: US100+US500+US30 (3 instruments, 1212 common sessions) ============
+  XS reversal (gross)                 n= 1211  WR= 49.7%  payoff=1.00  baselineWR= 50.1%  edge= -0.4pts  mean=-0.002%  t=-0.20  Sharpe=-0.09
+  XS reversal (net)                   n= 1211  WR= 48.7%  payoff=0.99  baselineWR= 50.2%  edge= -1.5pts  mean=-0.007%  t=-0.78  Sharpe=-0.36
+
+============ CROSS-SECTIONAL: all four (4 instruments, 1125 common sessions) ============
+  XS reversal (gross)                 n= 1124  WR= 50.7%  payoff=0.97  baselineWR= 50.8%  edge= -0.1pts  mean=-0.000%  t=-0.04  Sharpe=-0.02
+  XS reversal (net)                   n= 1124  WR= 49.8%  payoff=0.96  baselineWR= 51.1%  edge= -1.3pts  mean=-0.006%  t=-0.67  Sharpe=-0.32

@@ -1,0 +1,63 @@
+Gap fade, target=0.75xgap, stop=1.5xgap, gap>75th pct
+DISCOVERY WINDOW: 2021 .. 2024-12-31  (2025+ untouched)
+
+================ US100.cash  (201 signals) ================
+    ALL                                          n= 201 WR= 55.2% payoff=0.80 base= 55.5% edge= -0.3 mean=-0.005% t=-0.07
+    fade gap-DOWN only (buy the dip)             n=  97 WR= 57.7% payoff=0.64 base= 61.0% edge= -3.3 mean=-0.069% t=-0.57
+    fade gap-UP only (sell the rip)              n= 104 WR= 52.9% payoff=1.00 base= 49.9% edge= +3.0 mean=+0.054% t= 0.53
+    high realised vol (top third)                n=  69 WR= 53.6% payoff=0.80 base= 55.7% edge= -2.0 mean=-0.047% t=-0.31
+    low realised vol (bottom third)              n=  67 WR= 49.3% payoff=0.79 base= 56.0% edge= -6.7 mean=-0.092% t=-0.95
+    Mon only                                     n=  29 WR= 55.2% payoff=0.66 base= 60.2% edge= -5.0 mean=-0.089% t=-0.44
+    Tue only                                     n=  35 WR= 51.4% payoff=0.98 base= 50.5% edge= +1.0 mean=+0.019% t= 0.10
+    Wed only                                     n=  38 WR= 55.3% payoff=0.81 base= 55.1% edge= +0.2 mean=+0.003% t= 0.02
+    Thu only                                     n=  59 WR= 55.9% payoff=0.79 base= 55.7% edge= +0.2 mean=+0.004% t= 0.03
+    Fri only                                     n=  40 WR= 57.5% payoff=0.76 base= 56.9% edge= +0.6 mean=+0.011% t= 0.07
+
+================ US500.cash  (202 signals) ================
+    ALL                                          n= 202 WR= 54.5% payoff=0.78 base= 56.1% edge= -1.6 mean=-0.024% t=-0.40
+    fade gap-DOWN only (buy the dip)             n= 106 WR= 57.5% payoff=0.65 base= 60.6% edge= -3.0 mean=-0.048% t=-0.54
+    fade gap-UP only (sell the rip)              n=  96 WR= 51.0% payoff=0.97 base= 50.9% edge= +0.2 mean=+0.002% t= 0.03
+    high realised vol (top third)                n=  69 WR= 55.1% payoff=0.80 base= 55.5% edge= -0.4 mean=-0.008% t=-0.07
+    low realised vol (bottom third)              n=  67 WR= 55.2% payoff=0.81 base= 55.3% edge= -0.1 mean=-0.001% t=-0.02
+    Mon only                                     n=  37 WR= 54.1% payoff=0.63 base= 61.4% edge= -7.3 mean=-0.098% t=-0.73
+    Tue only                                     n=  35 WR= 45.7% payoff=0.95 base= 51.3% edge= -5.6 mean=-0.090% t=-0.55
+    Wed only                                     n=  34 WR= 61.8% payoff=0.86 base= 53.7% edge= +8.0 mean=+0.103% t= 0.78
+    Thu only                                     n=  54 WR= 61.1% payoff=0.76 base= 56.8% edge= +4.3 mean=+0.071% t= 0.58
+    Fri only                                     n=  42 WR= 47.6% payoff=0.76 base= 56.8% edge= -9.2 mean=-0.128% t=-1.01
+
+================ US30.cash  (241 signals) ================
+    ALL                                          n= 241 WR= 53.1% payoff=0.84 base= 54.5% edge= -1.4 mean=-0.017% t=-0.36
+    fade gap-DOWN only (buy the dip)             n= 116 WR= 54.3% payoff=0.80 base= 55.6% edge= -1.3 mean=-0.017% t=-0.23
+    fade gap-UP only (sell the rip)              n= 125 WR= 52.0% payoff=0.87 base= 53.5% edge= -1.5 mean=-0.017% t=-0.28
+    high realised vol (top third)                n=  82 WR= 62.2% payoff=0.73 base= 57.9% edge= +4.3 mean=+0.069% t= 0.73
+    low realised vol (bottom third)              n=  80 WR= 50.0% payoff=0.74 base= 57.6% edge= -7.6 mean=-0.075% t=-1.16
+    Mon only                                     n=  47 WR= 46.8% payoff=0.70 base= 58.8% edge=-12.0 mean=-0.134% t=-1.35
+    Tue only                                     n=  47 WR= 48.9% payoff=0.91 base= 52.4% edge= -3.4 mean=-0.047% t=-0.40
+    Wed only                                     n=  42 WR= 57.1% payoff=1.10 base= 47.6% edge= +9.5 mean=+0.110% t= 1.11
+    Thu only                                     n=  57 WR= 59.6% payoff=0.90 base= 52.5% edge= +7.1 mean=+0.089% t= 0.93
+    Fri only                                     n=  48 WR= 52.1% payoff=0.64 base= 61.0% edge= -8.9 mean=-0.108% t=-1.09
+
+================ GER40.cash  (186 signals) ================
+    ALL                                          n= 186 WR= 48.9% payoff=1.25 base= 44.4% edge= +4.5 mean=+0.052% t= 0.95
+    fade gap-DOWN only (buy the dip)             n=  96 WR= 55.2% payoff=1.03 base= 49.3% edge= +5.9 mean=+0.071% t= 0.87
+    fade gap-UP only (sell the rip)              n=  90 WR= 42.2% payoff=1.54 base= 39.4% edge= +2.8 mean=+0.033% t= 0.44
+    high realised vol (top third)                n=  64 WR= 56.2% payoff=1.18 base= 45.9% edge=+10.3 mean=+0.148% t= 1.31
+    low realised vol (bottom third)              n=  62 WR= 48.4% payoff=1.26 base= 44.2% edge= +4.2 mean=+0.038% t= 0.53
+    Mon only                                     n=  30 WR= 60.0% payoff=1.04 base= 49.1% edge=+10.9 mean=+0.106% t= 0.85
+    Tue only                                     n=  40 WR= 45.0% payoff=1.46 base= 40.6% edge= +4.4 mean=+0.053% t= 0.45
+    Wed only                                     n=  34 WR= 44.1% payoff=1.28 base= 43.9% edge= +0.2 mean=+0.002% t= 0.02
+    Thu only                                     n=  46 WR= 52.2% payoff=1.18 base= 45.8% edge= +6.4 mean=+0.086% t= 0.66
+    Fri only                                     n=  36 WR= 44.4% payoff=1.30 base= 43.5% edge= +0.9 mean=+0.011% t= 0.09
+
+================ POOLED across all four indices ================
+    ALL                                          n= 830 WR= 53.0% payoff=0.89 base= 53.0% edge= -0.0 mean=-0.000% t=-0.01
+    fade gap-DOWN only                           n= 415 WR= 56.1% payoff=0.75 base= 57.2% edge= -1.1 mean=-0.017% t=-0.37
+    fade gap-UP only                             n= 415 WR= 49.9% payoff=1.05 base= 48.7% edge= +1.2 mean=+0.016% t= 0.41
+    high vol                                     n= 283 WR= 57.2% payoff=0.82 base= 55.0% edge= +2.2 mean=+0.043% t= 0.66
+    gap-DOWN + high vol                          n= 156 WR= 57.1% payoff=0.83 base= 54.8% edge= +2.3 mean=+0.045% t= 0.49
+
+================ holding-window scan (pooled, gap-DOWN only) ================
+    first 1h                                     n= 415 WR= 45.3% payoff=0.88 base= 53.3% edge= -8.0 mean=-0.073% t=-2.54
+    first 2h                                     n= 415 WR= 45.1% payoff=0.97 base= 50.6% edge= -5.6 mean=-0.063% t=-1.78
+    first 3h                                     n= 415 WR= 48.4% payoff=0.97 base= 50.8% edge= -2.4 mean=-0.029% t=-0.76
+    full session                                 n= 415 WR= 56.1% payoff=0.75 base= 57.2% edge= -1.1 mean=-0.017% t=-0.37

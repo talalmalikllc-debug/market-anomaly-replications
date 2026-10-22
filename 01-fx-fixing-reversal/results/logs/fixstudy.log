@@ -1,0 +1,86 @@
+loaded 413,198 M5 bars  2021-01-04 00:05:00+02:00 -> 2026-07-29 14:00:00+03:00  (Europe/Athens)
+NY-time span: 2021-01-03 17:05:00-05:00 -> 2026-07-29 07:00:00-04:00
+
+==============================================================================
+ECB FIX TRADE  02:00 -> 08:15 -> 17:00 NY   n=1170 days   2021-01-04 -> 2026-07-28
+==============================================================================
+
+-- GROSS (mid-to-mid, no costs) — is the pattern even there? --
+  pre-fix  (short EURUSD)    mean  +0.421 pips   t= +0.50   win%  49.5   ann  +0.97%
+  post-fix (long  EURUSD)    mean  -0.852 pips   t= -0.77   win%  47.4   ann  -1.95%
+  combined                   mean  -0.431 pips   t= -0.31   win%  50.1   ann  -0.99%
+
+-- per-event spread actually paid (crossed twice at the fix bar) --
+  both legs                  mean  1.650p  median  0.400p  p90  10.000p  p99  10.000p
+  spread @ 02:00 NY          mean  0.824p  median  0.200p  p90   5.000p
+  spread @ fix               mean  0.825p  median  0.200p  p90   5.000p
+  spread @ 17:00 NY          mean  2.403p  median  2.100p  p90   5.000p
+
+-- NET (bid/ask executable), per commission scenario --
+  spread only        mean  -2.869 pips  t= -2.07  win%  48.0
+  $3/lot RT (0.3p)   mean  -3.469 pips  t= -2.51  win%  47.6
+  $7/lot RT (0.7p)   mean  -4.269 pips  t= -3.09  win%  47.0
+
+-- GROSS by year (split before pooling) --
+  2021  n= 211  pre  +0.764p  post  -3.182p  comb  -2.418p  t= -0.98
+  2022  n= 209  pre  -0.287p  post  +1.013p  comb  +0.727p  t= +0.16
+  2023  n= 210  pre  +0.337p  post  +0.326p  comb  +0.664p  t= +0.20
+  2024  n= 210  pre  +1.254p  post  -1.919p  comb  -0.666p  t= -0.27
+  2025  n= 209  pre  -0.068p  post  +0.175p  comb  +0.107p  t= +0.03
+  2026  n= 121  pre  +0.592p  post  -1.979p  comb  -1.388p  t= -0.42
+
+-- CONDITIONAL REVERSAL: ECB fix, last hour 07:15-08:15 vs 08:15-17:00  n=1170 --
+   next_window = -1.659 -0.0455 * last_hour_pre_fix     beta t=-0.44   corr=-0.0128
+   paper predicts beta < 0 (reversal). CONSISTENT
+
+-- PLACEBO: same structure, fix anchor shifted by N hours --
+   real fix anchor      combined  -0.431 pips
+   anchor 05:15 NY (-3h)  combined  -2.997 pips   t= -2.15
+   anchor 06:15 NY (-2h)  combined  -1.931 pips   t= -1.37
+   anchor 07:15 NY (-1h)  combined  -1.203 pips   t= -0.87
+   anchor 09:15 NY (+1h)  combined  -1.252 pips   t= -0.92
+   anchor 10:15 NY (+2h)  combined  -0.718 pips   t= -0.53
+   anchor 11:15 NY (+3h)  combined  -0.765 pips   t= -0.58
+
+==============================================================================
+LONDON FIX TRADE  02:00 -> 11:00 -> 17:00 NY   n=1170 days   2021-01-04 -> 2026-07-28
+==============================================================================
+
+-- GROSS (mid-to-mid, no costs) — is the pattern even there? --
+  pre-fix  (short EURUSD)    mean  +0.657 pips   t= +0.55   win%  50.9   ann  +1.51%
+  post-fix (long  EURUSD)    mean  -0.616 pips   t= -0.90   win%  48.3   ann  -1.41%
+  combined                   mean  +0.041 pips   t= +0.03   win%  49.4   ann  +0.09%
+
+-- per-event spread actually paid (crossed twice at the fix bar) --
+  both legs                  mean  1.648p  median  0.400p  p90  10.000p  p99  10.000p
+  spread @ 02:00 NY          mean  0.824p  median  0.200p  p90   5.000p
+  spread @ fix               mean  0.824p  median  0.200p  p90   5.000p
+  spread @ 17:00 NY          mean  2.403p  median  2.100p  p90   5.000p
+
+-- NET (bid/ask executable), per commission scenario --
+  spread only        mean  -2.396 pips  t= -1.76  win%  46.8
+  $3/lot RT (0.3p)   mean  -2.996 pips  t= -2.20  win%  46.2
+  $7/lot RT (0.7p)   mean  -3.796 pips  t= -2.79  win%  45.3
+
+-- GROSS by year (split before pooling) --
+  2021  n= 211  pre  +2.551p  post  -1.396p  comb  +1.155p  t= +0.47
+  2022  n= 209  pre  -2.051p  post  -0.751p  comb  -2.803p  t= -0.65
+  2023  n= 210  pre  +1.975p  post  +1.965p  comb  +3.940p  t= +1.18
+  2024  n= 210  pre  +3.177p  post  +0.004p  comb  +3.180p  t= +1.16
+  2025  n= 209  pre  -2.310p  post  -2.067p  comb  -4.377p  t= -1.35
+  2026  n= 121  pre  +0.498p  post  -2.073p  comb  -1.575p  t= -0.44
+
+-- CONDITIONAL REVERSAL: London fix, last hour 10:00-11:00 vs 11:00-17:00  n=1170 --
+   next_window = -1.412 -0.0083 * last_hour_pre_fix     beta t=-0.20   corr=-0.0059
+   paper predicts beta < 0 (reversal). CONSISTENT
+
+-- PLACEBO: same structure, fix anchor shifted by N hours --
+   real fix anchor      combined  +0.041 pips
+   anchor 08:00 NY (-3h)  combined  +0.647 pips   t= +0.46
+   anchor 09:00 NY (-2h)  combined  -1.150 pips   t= -0.84
+   anchor 10:00 NY (-1h)  combined  -1.356 pips   t= -0.99
+   anchor 12:00 NY (+1h)  combined  -0.163 pips   t= -0.12
+   anchor 13:00 NY (+2h)  combined  +0.612 pips   t= +0.43
+   anchor 14:00 NY (+3h)  combined  +0.391 pips   t= +0.29
+
+wrote legs_ecb.csv, legs_london.csv

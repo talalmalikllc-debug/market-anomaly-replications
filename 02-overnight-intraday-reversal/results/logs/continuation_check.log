@@ -1,0 +1,39 @@
+GAP CONTINUATION at the NY open. IS only, 2021 .. 2024-12-31.
+Gap must exceed the 75th percentile of |gap|.
+
+================ 1h hold ================
+    US100.cash                               n= 206 WR= 52.9% payoff=0.93 base= 51.7% edge= +1.2 mean=+0.015% t= 0.27
+    US500.cash                               n= 206 WR= 55.3% payoff=1.09 base= 48.0% edge= +7.4 mean=+0.063% t= 1.68
+    US30.cash                                n= 250 WR= 56.8% payoff=1.11 base= 47.3% edge= +9.5 mean=+0.069% t= 2.36  <<<
+    GER40.cash                               n= 192 WR= 48.4% payoff=0.89 base= 53.0% edge= -4.5 mean=-0.031% t=-0.95
+    POOLED both directions                   n= 854 WR= 53.6% payoff=1.00 base= 50.0% edge= +3.7 mean=+0.032% t= 1.63
+    POOLED gap-UP only (long)                n= 423 WR= 53.4% payoff=0.86 base= 53.6% edge= -0.2 mean=-0.002% t=-0.07
+    POOLED gap-DOWN only (short)             n= 431 WR= 53.8% payoff=1.15 base= 46.6% edge= +7.2 mean=+0.065% t= 2.30  <<<
+
+================ 2h hold ================
+    US100.cash                               n= 206 WR= 55.8% payoff=0.76 base= 56.7% edge= -0.8 mean=-0.013% t=-0.19
+    US500.cash                               n= 206 WR= 51.0% payoff=0.98 base= 50.4% edge= +0.6 mean=+0.006% t= 0.12
+    US30.cash                                n= 250 WR= 56.4% payoff=0.91 base= 52.5% edge= +3.9 mean=+0.037% t= 0.93
+    GER40.cash                               n= 192 WR= 48.4% payoff=0.91 base= 52.4% edge= -4.0 mean=-0.035% t=-0.81
+    POOLED both directions                   n= 854 WR= 53.2% payoff=0.88 base= 53.1% edge= +0.1 mean=+0.001% t= 0.04
+    POOLED gap-UP only (long)                n= 423 WR= 52.0% payoff=0.87 base= 53.4% edge= -1.4 mean=-0.015% t=-0.44
+    POOLED gap-DOWN only (short)             n= 431 WR= 54.3% payoff=0.89 base= 52.8% edge= +1.5 mean=+0.017% t= 0.44
+
+================ 3h hold ================
+    US100.cash                               n= 206 WR= 54.4% payoff=0.80 base= 55.7% edge= -1.3 mean=-0.023% t=-0.28
+    US500.cash                               n= 206 WR= 51.0% payoff=0.93 base= 51.9% edge= -0.9 mean=-0.011% t=-0.19
+    US30.cash                                n= 250 WR= 53.6% payoff=0.92 base= 52.2% edge= +1.4 mean=+0.015% t= 0.34
+    GER40.cash                               n= 192 WR= 50.0% payoff=0.81 base= 55.2% edge= -5.2 mean=-0.050% t=-1.02
+    POOLED both directions                   n= 854 WR= 52.3% payoff=0.87 base= 53.6% edge= -1.2 mean=-0.015% t=-0.52
+    POOLED gap-UP only (long)                n= 423 WR= 52.7% payoff=0.78 base= 56.1% edge= -3.4 mean=-0.041% t=-1.03
+    POOLED gap-DOWN only (short)             n= 431 WR= 52.0% payoff=0.96 base= 51.1% edge= +0.8 mean=+0.011% t= 0.25
+
+================ full session ================
+    US100.cash                               n= 206 WR= 53.4% payoff=0.73 base= 57.6% edge= -4.3 mean=-0.103% t=-0.95
+    US500.cash                               n= 206 WR= 50.5% payoff=0.85 base= 54.2% edge= -3.7 mean=-0.064% t=-0.80
+    US30.cash                                n= 250 WR= 52.8% payoff=0.79 base= 55.9% edge= -3.1 mean=-0.045% t=-0.76
+    GER40.cash                               n= 192 WR= 52.1% payoff=0.67 base= 59.8% edge= -7.7 mean=-0.094% t=-1.57
+    POOLED both directions                   n= 854 WR= 52.2% payoff=0.77 base= 56.6% edge= -4.4 mean=-0.074% t=-1.91
+    POOLED gap-UP only (long)                n= 423 WR= 57.7% payoff=0.61 base= 62.2% edge= -4.5 mean=-0.079% t=-1.47
+    POOLED gap-DOWN only (short)             n= 431 WR= 46.9% payoff=0.96 base= 51.1% edge= -4.2 mean=-0.070% t=-1.24
+

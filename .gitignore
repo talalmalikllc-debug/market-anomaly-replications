@@ -1,0 +1,8 @@
+# raw broker export and large intermediates are never committed
+data/raw/
+*.pkl
+*.csv.gz
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+.venv/

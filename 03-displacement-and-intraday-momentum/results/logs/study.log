@@ -1,0 +1,8 @@
+[ok] US100.cash M15: 60 rows
+[ok] US500.cash M15: 60 rows
+[ok] US30.cash M15: 60 rows
+[ok] GER40.cash M15: 60 rows
+[ok] XAUUSD M15: 60 rows
+[ok] EURUSD M15: 60 rows
+[ok] GBPJPY M15: 60 rows
+wrote results/stage1_M15.csv 420
