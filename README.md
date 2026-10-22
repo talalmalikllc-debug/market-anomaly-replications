@@ -39,7 +39,7 @@ $$g_t = 10^{4}\left[(m_{0}-m_{1}) + (m_{2}-m_{1})\right] \ \text{pips}, \qquad t
 
 ## 02 · Overnight–intraday reversal (US100, US500, US30, GER40)
 
-The reversal *sign* holds on every index: $\operatorname{corr}(r^{\text{overnight}}_t,\ r^{\text{intraday}}_t)$ ranges from −0.053 to −0.079. Turning it into a trade runs into a geometry trap. For a bracket with payoff ratio $\rho = \overline{\text{win}}/\overline{|\text{loss}|}$, the break-even win rate is
+The reversal *sign* holds on every index: $\mathrm{corr}(r^{\text{overnight}}_t,\ r^{\text{intraday}}_t)$ ranges from −0.053 to −0.079. Turning it into a trade runs into a geometry trap. For a bracket with payoff ratio $\rho = \overline{\text{win}}/\overline{|\text{loss}|}$, the break-even win rate is
 
 $$\text{WR}_0 = \frac{1}{1+\rho}, \qquad \text{edge} = \text{WR} - \text{WR}_0 \;\;\Longleftrightarrow\;\; \mathbb{E}[\text{P\&L}] > 0 \iff \text{edge} > 0$$
 
